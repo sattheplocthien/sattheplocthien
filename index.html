@@ -1,210 +1,296 @@
 <!doctype html>
-<html lang="en">
+<html lang="vi">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Lộc Thiên Steel – Your Trusted Partner for Every Construction Project</title>
-  <meta name="description" content="Lộc Thiên Steel is a leading steel distributor in Southern Vietnam, providing high-quality products and professional services." />
+  <title>Sắt Thép Lộc Thiên – Giải pháp vật tư thép cho nhà thầu & nhà máy</title>
+  <meta name="description" content="Lộc Thiên cung cấp ống thép, thép hộp, thép hình, thép tấm, phụ kiện và dịch vụ gia công theo bản vẽ. Đồng hành từ khâu bóc tách khối lượng đến giao nhận tại công trường ở miền Nam Việt Nam." />
+  <link rel="canonical" href="https://sattheplocthien.com/giai-phap-thep/" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Sắt Thép Lộc Thiên – Giải pháp vật tư thép cho nhà thầu & nhà máy" />
+  <meta property="og:description" content="Đủ chủng loại – kiểm soát chất lượng – giao đúng hẹn – hỗ trợ kỹ thuật thực tế." />
+  <meta property="og:url" content="https://sattheplocthien.com/giai-phap-thep/" />
+  <meta property="og:image" content="https://sattheplocthien.com/wp-content/uploads/2025/08/cover-loc-thien-2.jpg" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
 
   <style>
     :root{
-      --bg:#ffffff; --fg:#0f172a; --muted:#475569; --brand:#1f2937; --accent:#e5e7eb; --pill:#f1f5f9;
+      --bg:#0b1220; --paper:#0f172a; --ink:#e5e7eb; --sub:#94a3b8; --key:#60a5fa; --line:#1f2937; --brand:#1d4ed8; --accent:#334155;
+      --ok:#22c55e; --warn:#f59e0b; --ring:rgba(29,78,216,.25)
     }
     *{box-sizing:border-box}
-    body{
-      margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji";
-      color:var(--fg); background:var(--bg); line-height:1.65;
-    }
-    .wrap{max-width:1000px; margin:auto; padding:40px 20px}
-    header{padding-bottom:24px; border-bottom:1px solid var(--accent)}
-    h1{margin:0 0 10px; font-size:clamp(24px,3.5vw,40px); letter-spacing:.2px}
-    p.lead{font-size:clamp(16px,2.1vw,18px); color:var(--muted); margin:0}
-    section{padding:28px 0; border-bottom:1px solid var(--accent)}
-    h2{margin:0 0 12px; font-size:clamp(18px,2.6vw,26px)}
-    .pill{display:inline-block; background:var(--pill); border:1px solid var(--accent); padding:6px 10px; border-radius:999px; font-weight:600}
-    ul{margin:12px 0 0 18px}
-    li{margin:6px 0}
-    .grid{display:grid; gap:18px}
-    @media (min-width:800px){ .grid{grid-template-columns:1fr 1fr} }
-    .card{border:1px solid var(--accent); border-radius:14px; padding:16px}
-    .muted{color:var(--muted)}
-    .cta{display:flex; flex-wrap:wrap; gap:12px; margin-top:10px}
-    .btn{
-      display:inline-block; padding:10px 16px; border-radius:10px; text-decoration:none; border:1px solid var(--brand);
-      color:#fff; background:var(--brand); font-weight:600;
-    }
-    .btn--outline{background:transparent; color:var(--brand)}
-    address{font-style:normal}
-    footer{padding-top:24px; font-size:14px; color:var(--muted)}
-    a{color:var(--brand)}
+    body{margin:0; font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial; background:var(--bg); color:var(--ink); line-height:1.7}
+    a{color:#dbeafe; text-decoration:none}
+    a:hover{opacity:.9}
+    .wrap{max-width:1180px; margin:auto; padding:28px 20px}
+    .hero{display:grid; gap:22px; align-items:center}
+    @media(min-width:960px){.hero{grid-template-columns:1.2fr .8fr}}
+    .badge{display:inline-flex; align-items:center; gap:8px; padding:6px 12px; border:1px solid var(--accent); border-radius:999px; font-size:12px; color:#bfdbfe; background:rgba(29,78,216,.08)}
+    .title{font-size:clamp(28px,3.8vw,48px); line-height:1.2; margin:6px 0 8px}
+    .lead{color:var(--sub); font-size:clamp(15px,2vw,18px)}
+    .panel{background:var(--paper); border:1px solid var(--accent); border-radius:16px; padding:18px}
+    .media{border-radius:14px; overflow:hidden; border:1px solid var(--accent); box-shadow:0 10px 30px var(--ring)}
+    .media img{display:block; width:100%; height:auto}
+
+    /* Sections */
+    section{padding:34px 0; border-top:1px dashed var(--accent)}
+    h2{margin:0 0 14px; font-size:clamp(20px,2.6vw,32px)}
+    h3{margin:0 0 8px; font-size:18px}
+    .sub{color:var(--sub)}
+    .grid{display:grid; gap:16px}
+    @media(min-width:840px){.grid-2{grid-template-columns:1fr 1fr} .grid-3{grid-template-columns:repeat(3,1fr)} .grid-4{grid-template-columns:repeat(4,1fr)}}
+
+    /* KPI strip */
+    .kpis{display:grid; grid-template-columns:repeat(2,1fr); gap:12px}
+    @media(min-width:720px){.kpis{grid-template-columns:repeat(4,1fr)}}
+    .kpi{background:linear-gradient(180deg,rgba(59,130,246,.08),rgba(59,130,246,0)); border:1px solid var(--accent); border-radius:14px; padding:14px; text-align:center}
+    .kpi strong{font-size:24px; display:block}
+    .kpi span{color:var(--sub); font-size:13px}
+
+    /* Steps */
+    .steps{counter-reset:st}
+    .step{display:grid; grid-template-columns:auto 1fr; gap:12px; align-items:start; padding:14px; border:1px solid var(--accent); border-radius:12px; background:rgba(148,163,184,.06)}
+    .step::before{counter-increment:st; content:counter(st); width:30px; height:30px; border-radius:8px; background:var(--brand); color:white; display:inline-grid; place-items:center; font-weight:700}
+
+    /* Product matrix */
+    .matrix{display:grid; gap:14px; grid-template-columns:repeat(2,1fr)}
+    @media(min-width:680px){.matrix{grid-template-columns:repeat(3,1fr)}}
+    @media(min-width:1060px){.matrix{grid-template-columns:repeat(6,1fr)}}
+    .cell{background:rgba(2,6,23,.4); border:1px solid var(--accent); border-radius:12px; padding:14px; text-align:center; transition:transform .15s ease, box-shadow .15s ease}
+    .cell:hover{transform:translateY(-2px); box-shadow:0 10px 18px var(--ring)}
+    .cell img{width:72%; margin:0 auto 8px; display:block}
+    .cell h4{margin:6px 0 4px; font-size:15px}
+    .cell p{margin:0; font-size:13px; color:var(--sub)}
+
+    /* Industries */
+    .industries{display:grid; gap:12px; grid-template-columns:repeat(2,1fr)}
+    @media(min-width:880px){.industries{grid-template-columns:repeat(5,1fr)}}
+    .tag{border:1px solid var(--accent); border-radius:999px; padding:8px 12px; text-align:center; background:rgba(148,163,184,.08)}
+
+    /* FAQ */
+    details{background:rgba(148,163,184,.08); border:1px solid var(--accent); border-radius:12px; padding:12px}
+    summary{cursor:pointer; font-weight:600}
+
+    /* CTA */
+    .cta{display:flex; flex-wrap:wrap; gap:12px}
+    .btn{display:inline-block; padding:10px 16px; border-radius:10px; border:1px solid var(--brand); font-weight:700}
+    .btn-primary{background:var(--brand); color:#fff}
+    .btn-ghost{background:transparent; color:#dbeafe}
+
+    footer{padding:26px 0; color:var(--sub); font-size:14px}
   </style>
 </head>
 <body>
-  <main class="wrap">
-    <header>
-      <h1>LỘC THIÊN STEEL – YOUR TRUSTED PARTNER FOR EVERY CONSTRUCTION PROJECT</h1>
-      <p class="lead">
-        In the ever-changing construction market, <strong>Lộc Thiên Steel</strong> has established itself as a leading steel distributor in Southern Vietnam, delivering high-quality, diverse steel products and dedicated services to customers.
-      </p>
-    </header>
+  <header class="wrap hero" aria-label="Phần mở đầu">
+    <div>
+      <span class="badge" aria-label="Đối tác nhà thầu">Đối tác vật tư cho nhà thầu & nhà máy</span>
+      <h1 class="title">Sắt Thép Lộc Thiên<br/> Đồng hành từ bản vẽ đến lắp dựng</h1>
+      <p class="lead">Chúng tôi cung ứng thép đúng chuẩn, đúng lịch và đúng hồ sơ. Từ bóc tách khối lượng, tư vấn vật tư cho đến gia công theo bản vẽ và giao nhận an toàn tại công trường – một quy trình liền mạch để tiết kiệm thời gian và chi phí cho dự án.</p>
+      <div class="cta" style="margin-top:12px">
+        <a class="btn btn-primary" href="https://zalo.me/0858676679" target="_blank" rel="noopener">Yêu cầu báo giá</a>
+        <a class="btn btn-ghost" href="#lien-he">Liên hệ nhanh</a>
+      </div>
+      <div class="kpis" style="margin-top:14px">
+        <div class="kpi"><strong>24–72h</strong><span>Thời gian giao khả dụng</span></div>
+        <div class="kpi"><strong>100%</strong><span>Hồ sơ nguồn gốc & CQ</span></div>
+        <div class="kpi"><strong>~0.5%</strong><span>Sai số gia công mục tiêu</span></div>
+        <div class="kpi"><strong>Miền Nam</strong><span>Phạm vi phục vụ</span></div>
+      </div>
+    </div>
+    <div class="media panel">
+      <img src="https://sattheplocthien.com/wp-content/uploads/2025/08/SAT-THEP-LOC-THIEN.jpg" alt="Kho thép Lộc Thiên & hoạt động giao nhận" loading="eager" decoding="async" fetchpriority="high"/>
+    </div>
+  </header>
 
-    <section>
-      <div class="grid">
-        <div>
-          <p>
-            With our <strong>headquarters at No. 1001, Group 22, KP1, Long Hung Ward, Bien Hoa City, Dong Nai Province</strong>,
-            we have proudly supported thousands of residential, industrial, and infrastructure projects over the years,
-            becoming the trusted choice for contractors, investors, and manufacturers.
-          </p>
+  <main>
+    <!-- Quy trình thực thi -->
+    <section class="wrap" aria-labelledby="flow">
+      <h2 id="flow">Quy trình triển khai</h2>
+      <p class="sub">Một luồng công việc gọn, rõ, có kiểm soát ở từng bước.</p>
+      <div class="grid grid-2 steps" style="margin-top:8px">
+        <div class="step">
+          <div></div>
+          <div><h3>01 — Tiếp nhận & bóc tách</h3><p class="sub">Nhận bản vẽ/yêu cầu, đối chiếu tiêu chuẩn, chốt quy cách & khối lượng dự kiến.</p></div>
         </div>
-        <div class="card">
-          <span class="pill" aria-label="Location">Headquarters</span>
-          <address>
-            No. 1001, Group 22, KP1, Long Hung Ward,<br />
-            Bien Hoa City, Dong Nai Province
-          </address>
+        <div class="step">
+          <div></div>
+          <div><h3>02 — Báo giá & phương án</h3><p class="sub">Gợi ý vật tư tương đương, tối ưu chi phí/tiến độ, lịch giao theo mốc thi công.</p></div>
+        </div>
+        <div class="step">
+          <div></div>
+          <div><h3>03 — Gia công & đóng gói</h3><p class="sub">Cắt/uốn/dập theo bản vẽ, kiểm soát sai số, ký hiệu kiện & biên bản kèm theo.</p></div>
+        </div>
+        <div class="step">
+          <div></div>
+          <div><h3>04 — Giao nhận & hậu mãi</h3><p class="sub">Điều phối xe, hỗ trợ bốc dỡ an toàn; tư vấn kỹ thuật trong quá trình lắp dựng.</p></div>
         </div>
       </div>
     </section>
 
-    <section>
-      <h2>🔩 A Wide Range of Steel Products – Meeting All Construction Needs</h2>
-      <p class="muted">At Lộc Thiên, you can easily find a full range of steel products, from standard to specialized, including:</p>
-      <ul>
-        <li><strong>Seamless steel pipes, black steel pipes, galvanized steel pipes.</strong></li>
-        <li><strong>Steel box sections and steel pipes</strong> from reputable brands such as Hòa Phát, SEAH, Việt Đức, VinaOne…</li>
-        <li><strong>Structural steel shapes:</strong> U, I, V, H.</li>
-        <li><strong>Steel plates:</strong> SS400, Q345B, A572, A36…</li>
-        <li><strong>Checkered steel plates, threaded steel fittings, welded steel accessories</strong> (China, Japan, Korea).</li>
-      </ul>
-      <p>
-        All products are available in <strong>various specifications, sizes, and thicknesses</strong>, ensuring they meet even the most demanding technical requirements — from residential projects to large-scale industrial constructions.
-      </p>
+    <!-- Danh mục theo ma trận -->
+    <section class="wrap" aria-labelledby="matrix">
+      <h2 id="matrix">Danh mục vật tư</h2>
+      <p class="sub">Chủng loại sẵn sàng cho kết cấu, MEP và cơ khí.</p>
+      <div class="matrix" role="list">
+        <article class="cell" role="listitem">
+          <img src="https://sattheplocthien.com/wp-content/uploads/2025/08/Thep-ong-duc.png" alt="Ống thép đúc" loading="lazy"/>
+          <h4>Ống thép đúc</h4>
+          <p>Đường ống chịu áp, dày bền; nhiều mã hàng.</p>
+        </article>
+        <article class="cell" role="listitem">
+          <a href="https://sattheplocthien.com/ong-thep/" aria-label="Xem chi tiết thép ống"><img src="https://sattheplocthien.com/wp-content/uploads/2025/08/Ong-thep.png" alt="Thép ống hàn & mạ kẽm" loading="lazy"/></a>
+          <h4>Thép ống</h4>
+          <p>Đen/mạ kẽm; hàn/đúc; đáp ứng MEP & kết cấu nhẹ.</p>
+        </article>
+        <article class="cell" role="listitem">
+          <img src="https://sattheplocthien.com/wp-content/uploads/2025/08/Thep-hop.png" alt="Thép hộp" loading="lazy"/>
+          <h4>Thép hộp</h4>
+          <p>Vuông/chữ nhật, thương hiệu uy tín trong nước.</p>
+        </article>
+        <article class="cell" role="listitem">
+          <img src="https://sattheplocthien.com/wp-content/uploads/2025/08/Thep-hinh.png" alt="Thép hình U I H V" loading="lazy"/>
+          <h4>Thép hình</h4>
+          <p>U/I/H/V cho nhà xưởng & công trình thép.</p>
+        </article>
+        <article class="cell" role="listitem">
+          <img src="https://sattheplocthien.com/wp-content/uploads/2025/08/Thep-tam.png" alt="Thép tấm" loading="lazy"/>
+          <h4>Thép tấm</h4>
+          <p>SS400, A36, Q345B… đa dạng bề dày.</p>
+        </article>
+        <article class="cell" role="listitem">
+          <img src="https://sattheplocthien.com/wp-content/uploads/2025/08/Mat-bich.png" alt="Phụ kiện ống thép" loading="lazy"/>
+          <h4>Phụ kiện ống</h4>
+          <p>Mặt bích, co, tê, măng sông – đồng bộ quy cách.</p>
+        </article>
+      </div>
     </section>
 
-    <section>
-      <h2>✅ Quality Commitment – Professional Services</h2>
-      <p>
-        We are committed to providing products that meet high standards of durability and safety throughout their use.
-        With the motto <em>“Trusted Partner – Long-term Cooperation,”</em> Lộc Thiên Steel focuses not only on product quality but also on thoughtful services:
-      </p>
-      <ul>
-        <li>Technical consultation and support from an experienced and knowledgeable team.</li>
-        <li>Cutting, bending, and steel processing based on your needs.</li>
-        <li>Fast and reliable delivery, helping customers meet construction deadlines.</li>
-        <li>Competitive pricing and flexible policies to optimize costs for every project.</li>
-      </ul>
+    <!-- Ngành phục vụ & tình huống dùng -->
+    <section class="wrap" aria-labelledby="industries">
+      <h2 id="industries">Ngành & tình huống ứng dụng</h2>
+      <div class="industries" style="margin:10px 0 16px">
+        <div class="tag">Nhà xưởng tiền chế</div>
+        <div class="tag">Dân dụng & thương mại</div>
+        <div class="tag">Cơ điện (MEP)</div>
+        <div class="tag">Kết cấu cầu đường</div>
+        <div class="tag">Cơ khí & chế tạo</div>
+      </div>
+      <div class="grid grid-3">
+        <div class="panel"><h3>Đơn gấp</h3><p class="sub">Ưu tiên kho sẵn, cắt theo khổ tiêu chuẩn để rút ngắn lead-time.</p></div>
+        <div class="panel"><h3>Dự án dài hạn</h3><p class="sub">Lịch giao chia đợt, giữ giá hoặc áp dụng công thức để kiểm soát biến động.</p></div>
+        <div class="panel"><h3>Hồ sơ kỹ thuật</h3><p class="sub">Cung cấp CoC, CQ, packing list, tem kiện & nhật ký giao nhận theo lô.</p></div>
+      </div>
     </section>
 
-    <section>
-      <h2>📞 Contact Us Today for the Best Support</h2>
+    <!-- Khác biệt dịch vụ -->
+    <section class="wrap" aria-labelledby="edge">
+      <h2 id="edge">Điểm mạnh khác biệt</h2>
+      <div class="grid grid-2">
+        <div class="panel">
+          <h3>Kiểm soát chất lượng</h3>
+          <ul class="sub">
+            <li>Đối chiếu tiêu chuẩn vật liệu trước khi xuất kho.</li>
+            <li>Kiểm kích thước sau gia công với mục tiêu sai số ~0.5%.</li>
+            <li>Ký hiệu kiện & mã hoá lô để truy xuất.</li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h3>Điều phối thực tế</h3>
+          <ul class="sub">
+            <li>Lịch giao phù hợp biện pháp thi công tại site.</li>
+            <li>Phối hợp bốc dỡ an toàn; hạn chế ảnh hưởng giao thông nội bộ.</li>
+            <li>Hỗ trợ kỹ thuật trong lúc lắp dựng.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Câu hỏi thường gặp -->
+    <section class="wrap" aria-labelledby="faq">
+      <h2 id="faq">Câu hỏi thường gặp</h2>
       <div class="grid">
-        <div class="card">
-          <p><strong>Hotline:</strong> <a href="tel:+84913941295">+84 913 941 295</a> | <a href="tel:+84858676679">+84 858 676 679</a></p>
-          <p><strong>Address:</strong> No. 1001, Group 22, KP1, Long Hung Ward, Bien Hoa City, Dong Nai Province</p>
-          <p><strong>Website:</strong> <a href="http://sattheplocthien.com" rel="noopener">sattheplocthien.com</a></p>
+        <details>
+          <summary>Thời gian giao nhanh nhất là bao lâu?</summary>
+          <p class="sub">Với hàng có sẵn và cung đường thuận lợi, có thể 24–72 giờ. Đơn gia công phụ thuộc bản vẽ & tải trọng.</p>
+        </details>
+        <details>
+          <summary>Có hỗ trợ thay thế vật tư tương đương?</summary>
+          <p class="sub">Có. Chúng tôi đề xuất phương án tương đương tiêu chuẩn để bảo đảm công năng và chi phí.</p>
+        </details>
+        <details>
+          <summary>Chính sách chứng từ & xuất xứ thế nào?</summary>
+          <p class="sub">Cung cấp đầy đủ: hóa đơn, phiếu xuất, CQ/CoC (nếu yêu cầu), label kiện và biên bản bàn giao theo lô.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- Liên hệ -->
+    <section id="lien-he" class="wrap" aria-labelledby="contact">
+      <h2 id="contact">Liên hệ</h2>
+      <div class="grid grid-2">
+        <div class="panel">
+          <p><strong>Hotline:</strong> <a href="tel:+84858676679">+84 858 676 679</a></p>
+          <p><strong>Địa chỉ:</strong> 1001, Tổ 22, KP1, P. Long Hưng, TP. Biên Hòa, Đồng Nai</p>
+          <p><strong>Website:</strong> <a href="https://sattheplocthien.com" target="_blank" rel="noopener">sattheplocthien.com</a></p>
           <div class="cta">
-            <a class="btn" href="tel:+84913941295">Call Now</a>
-            <a class="btn btn--outline" href="http://sattheplocthien.com" target="_blank" rel="noopener">Visit Website</a>
+            <a class="btn btn-primary" href="https://zalo.me/0858676679" target="_blank" rel="noopener">Nhận báo giá</a>
+            <a class="btn btn-ghost" href="tel:+84858676679">Gọi ngay</a>
           </div>
         </div>
-        <div>
-          <blockquote class="muted" cite="http://sattheplocthien.com">
-            “Lộc Thiên Steel – Building strong foundations, ensuring lasting structures, and accompanying your sustainable growth!”
-          </blockquote>
+        <div class="panel">
+          <blockquote class="sub">“Vật tư đúng – tiến độ chuẩn – hồ sơ đủ. Chúng tôi coi từng lô hàng như một cam kết rõ ràng với công trình của bạn.”</blockquote>
         </div>
       </div>
     </section>
-<section>
-<h2>Social Sat Thep Loc Thien</h2>
-<p><a href="https://podtail.com/podcast/stelllocthien" target="_blank">podtail.com</a>
-<a href="https://danske-podcasts.dk/podcast/stelllocthien" target="_blank">danske-podcasts.dk</a>
-<a href="https://files.fm/sattheplocthien/info" target="_blank">files.fm</a>
-<a href="https://myapple.pl/users/528098-sat-thep-loc-thien" target="_blank">myapple.pl</a>
-<a href="https://startupxplore.com/en/person/sattheplocthien" target="_blank">startupxplore.com</a>
-<a href="https://www.linkcentre.com/profile/sattheplocthien/" target="_blank">www.linkcentre.com</a>
-<a href="https://forum.liquidbounce.net/user/sattheplocthien" target="_blank">forum.liquidbounce.net</a>
-<a href="https://magic.ly/sattheplocthien" target="_blank">magic.ly</a>
-<a href="https://pinshape.com/users/8810925-sattheplocthien" target="_blank">pinshape.com</a>
-<a href="https://teletype.in/@sattheplocthien" target="_blank">teletype.in</a>
-<a href="https://www.fundable.com/sat-thep-loc-thien" target="_blank">www.fundable.com</a>
-<a href="https://www.iniuria.us/forum/member.php?602931-sattheplocthien" target="_blank">www.iniuria.us</a>
-<a href="https://nhattao.com/members/user6831512.6831512/" target="_blank">nhattao.com</a>
-<a href="https://www.nintendo-master.com/profil/sattheplocthien" target="_blank">www.nintendo-master.com</a>
-<a href="https://artistecard.com/sattheplocthien" target="_blank">artistecard.com</a>
-<a href="https://hypothes.is/users/sattheplocthien" target="_blank">hypothes.is</a>
-<a href="https://www.annuncigratuititalia.it/author/sattheplocthien" target="_blank">www.annuncigratuititalia.it</a>
-<a href="https://www.warriorforum.com/members/Sat%20Thep%20Loc%20Thien.html" target="_blank">www.warriorforum.com</a>
-<a href="https://menta.work/user/207338" target="_blank">menta.work</a>
-<a href="https://podtail.se/podcast/stelllocthien/gia-thep-h-p-m-k-m-s-t-h-p-en-c-p-nh-p-m-i-nh-t-n-" target="_blank">podtail.se</a>
-<a href="https://podcastrepublic.net/podcast/1839359770" target="_blank">podcastrepublic.net</a>
-<a href="https://triberr.com/sattheplocthien" target="_blank">triberr.com</a>
-<a href="https://www.divephotoguide.com/user/sattheplocthien/" target="_blank">www.divephotoguide.com</a>
-<a href="https://podurama.com/podcast/stelllocthien-i-220520827511" target="_blank">podurama.com</a>
-<a href="https://www.abclinuxu.cz/lide/sattheplocthien" target="_blank">www.abclinuxu.cz</a>
-<a href="https://www.apsense.com/user/sattheplocthien" target="_blank">www.apsense.com</a>
-<a href="https://www.notebook.ai/@sattheplocthien" target="_blank">www.notebook.ai</a>
-<a href="https://poddar.se/podcast/stelllocthien" target="_blank">poddar.se</a>
-<a href="https://www.talentbold.com/sat-thep-loc-thien-26639-cpn" target="_blank">www.talentbold.com</a>
-<a href="https://uk-podcasts.co.uk/podcast/stelllocthien" target="_blank">uk-podcasts.co.uk</a>
-<a href="https://experiment.com/users/ssattheplocthien" target="_blank">experiment.com</a>
-<a href="https://zzb.bz/th2a8G" target="_blank">zzb.bz</a>
-<a href="https://www.mapleprimes.com/users/sattheplocthien" target="_blank">www.mapleprimes.com</a>
-<a href="https://www.vevioz.com/sattheplocthien" target="_blank">www.vevioz.com</a>
-<a href="https://www.circleme.com/SatThepLocThien481940360" target="_blank">www.circleme.com</a>
-<a href="https://giaxaydung.vn/members/sattheplocthien.488756/#about" target="_blank">giaxaydung.vn</a>
-<a href="https://iszene.com/user-304360.html" target="_blank">iszene.com</a>
-<a href="https://ketcau.com/member/99211-locthien/visitormessage/284028-visitor-message-from-locthien#post284028" target="_blank">ketcau.com</a>
-<a href="https://pod.pe/podcast/stelllocthien" target="_blank">pod.pe</a>
-<a href="https://vibuma.com/supplier-portraits/sat-thep-loc-thien-s1989.html" target="_blank">vibuma.com</a>
-<a href="https://gettogether.community/sattheplocthien/" target="_blank">gettogether.community</a>
-<a href="https://itvnn.net/member.php?156092-sattheplocthien" target="_blank">itvnn.net</a>
-<a href="https://norske-podcaster.com/podcast/stelllocthien" target="_blank">norske-podcaster.com</a>
-<a href="https://nzpod.co.nz/podcast/stelllocthien" target="_blank">nzpod.co.nz</a>
-<a href="https://podcast-chile.com/podcast/stelllocthien" target="_blank">podcast-chile.com</a>
-<a href="https://writeablog.net/r02can2tze" target="_blank">writeablog.net</a>
-<a href="https://zenwriting.net/gdds63zp8w" target="_blank">zenwriting.net</a>
-<a href="https://www.bunity.com/sattheplocthien" target="_blank">www.bunity.com</a>
-<a href="https://forum.cncprovn.com/members/381958-sattheplocthien" target="_blank">forum.cncprovn.com</a>
-<a href="https://forum.dfwmas.org/index.php?members/sattheplocthien.162459/#about" target="_blank">forum.dfwmas.org</a>
-<a href="https://forum.dmec.vn/index.php?members/sattheplocthien.141288/" target="_blank">forum.dmec.vn</a>
-<a href="https://podcast-colombia.co/podcast/stelllocthien" target="_blank">podcast-colombia.co</a>
-<a href="https://podcast-mexico.mx/podcast/stelllocthien" target="_blank">podcast-mexico.mx</a>
-<a href="https://indian-podcasts.com/podcast/stelllocthien" target="_blank">indian-podcasts.com</a>
-<a href="https://podcasts-brasileiros.com/podcast/stelllocthien" target="_blank">podcasts-brasileiros.com</a>
-<a href="https://www.b2bpakistan.com/view-profile/data_company_name-290262.html" target="_blank">www.b2bpakistan.com</a>
-<a href="https://wholesaler.daisan.vn/ong-thep-850413.html" target="_blank">wholesaler.daisan.vn</a>
-<a href="http://web.symbol.rs/forum/member.php?action=profile&uid=1183819" target="_blank">web.symbol.rs</a>
-<a href="https://www.underworldralinwood.ca/forums/member.php?action=profile&uid=507767" target="_blank">www.underworldralinwood.ca</a>
-<a href="https://suckhoetoday.com/members/31909-locthien.html" target="_blank">suckhoetoday.com</a>
-<a href="https://cty.vn/sattheplocthien" target="_blank">cty.vn</a>
-<a href="https://canadian-podcasts.com/podcast/stelllocthien" target="_blank">canadian-podcasts.com</a></p>
-</section>
-    <footer>
-      © <span id="year"></span> Lộc Thiên Steel. All rights reserved.
-    </footer>
   </main>
 
+  <footer class="wrap">
+    © <span id="y"></span> Sắt Thép Lộc Thiên · All rights reserved
+  </footer>
+
   <script>
-    // set current year in footer
-    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById('y').textContent = new Date().getFullYear();
   </script>
 
-  <!-- Optional: Basic structured data -->
+  <!-- Structured Data: LocalBusiness + ItemList khác hoàn toàn so với bài cũ -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Lộc Thiên Steel",
-    "url": "http://sattheplocthien.com",
-    "telephone": "+84 913 941 295",
+    "@type": "LocalBusiness",
+    "name": "Sắt Thép Lộc Thiên",
+    "url": "https://sattheplocthien.com",
+    "telephone": "+84 858 676 679",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "No. 1001, Group 22, KP1, Long Hung Ward",
+      "streetAddress": "1001, Group 22, KP1, Long Hung Ward",
       "addressLocality": "Bien Hoa City",
       "addressRegion": "Dong Nai",
       "addressCountry": "VN"
-    }
+    },
+    "areaServed": "Southern Vietnam",
+    "sameAs": ["https://zalo.me/0858676679"],
+    "knowsAbout": [
+      "steel pipes","steel plates","structural steel","galvanized steel","steel fabrication","MEP materials"
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"ItemList",
+    "name":"Danh mục vật tư Lộc Thiên",
+    "itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Ống thép đúc"},
+      {"@type":"ListItem","position":2,"name":"Thép ống","url":"https://sattheplocthien.com/ong-thep/"},
+      {"@type":"ListItem","position":3,"name":"Thép hộp"},
+      {"@type":"ListItem","position":4,"name":"Thép hình"},
+      {"@type":"ListItem","position":5,"name":"Thép tấm"},
+      {"@type":"ListItem","position":6,"name":"Phụ kiện ống"}
+    ]
   }
   </script>
 </body>
